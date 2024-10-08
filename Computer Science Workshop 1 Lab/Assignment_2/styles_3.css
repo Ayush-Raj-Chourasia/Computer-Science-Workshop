@@ -1,0 +1,17 @@
+#special-div {
+    font-size: 24px;
+    color: black;
+}
+
+
+#hover-image {
+    width: 300px;
+    height: auto;
+}    
+
+
+img:hover + #special-div {
+    color: red;
+}
+
+

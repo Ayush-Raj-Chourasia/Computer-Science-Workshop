@@ -1,0 +1,12 @@
+.image-container {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('https://images.wallpaperscraft.com/image/single/cube_dark_texture_119956_2048x1152.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.image-container:hover {
+    background-image: url('https://images.wallpaperscraft.com/image/single/car_concept_threedimensional_133624_3840x2400.jpg');
+}
