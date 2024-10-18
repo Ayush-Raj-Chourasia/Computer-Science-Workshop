@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fixed Vertical Menu Bar_2341003059</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+      
+        .vertical-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            padding-top: 20px;
+            overflow-x: hidden;
+        }
+
+        
+        .vertical-menu a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            text-align: left;
+        }
+
+        
+        .vertical-menu a:hover {
+            background-color: #575757;
+        }
+
+        
+        .content {
+            margin-left: 210px; 
+            padding: 20px;
+        }
+
+     
+        .long-content {
+            height: 1500px; 
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="vertical-menu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact Us</a>
+</div>
+
+
+<div class="content">
+    <h1>Fixed Vertical Menu Example</h1>
+    <p>Scroll down to see the fixed vertical menu on the left.</p>
+    <div class="long-content"></div> 
+</div>
+
+</body>
+</html>
