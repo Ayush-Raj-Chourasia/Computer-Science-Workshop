@@ -44,7 +44,7 @@ Each assignment folder contains:
 
 ## License
 
-This project is licensed under the (LICENSE).
+This project is licensed under the MIT License.
 
 ---
 
