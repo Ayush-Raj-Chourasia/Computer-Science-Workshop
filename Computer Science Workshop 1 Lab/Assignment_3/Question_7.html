@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Table</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#add-row').click(function () {
+                var name = $('#student-name').val();
+                var age = $('#student-age').val();
+                var grade = $('#student-grade').val();
+                if (name && age && grade) {
+                    var newRow = '<tr><td>' + name + '</td><td>' + age + '</td><td>' + grade + '</td></tr>';
+                    $('#student-table tbody').append(newRow);
+                    $('#student-name').val('');
+                    $('#student-age').val('');
+                    $('#student-grade').val('');
+                } else {
+                    alert("Please fill in all fields.");
+                }
+            });
+
+            $('#change-color').click(function () {
+                $('#student-table td').css('color', 'red');
+            });
+        });
+    </script>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 8px;
+            margin: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Student Data Table</h2>
+    
+    <div class="input-container" style="text-align: center;">
+        <input type="text" id="student-name" placeholder="Enter Student Name" />
+        <input type="number" id="student-age" placeholder="Enter Age" />
+        <input type="text" id="student-grade" placeholder="Enter Grade" />
+    </div>
+
+    <div class="button-container">
+        <button id="add-row">Add Row</button>
+        <button id="change-color">Change Color</button>
+    </div>
+
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

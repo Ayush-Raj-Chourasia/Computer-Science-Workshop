@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Assignment</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#btn-red').click(function () {
+                $('body').css('background-color', 'red');
+            });
+
+            $('#btn-blue').click(function () {
+                $('body').css('background-color', 'blue');
+            });
+
+            $('#btn-green').click(function () {
+                $('body').css('background-color', 'green');
+            });
+
+            $('#btn-toggle').click(function () {
+                $('div.box').toggle();
+            });
+        });
+    </script>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .button-group {
+            margin: 20px 0;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .box {
+            margin: 20px auto;
+            width: 50%;
+            height: 100px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background and Toggle Button</h1>
+    
+    <div class="button-group">
+        <button id="btn-red">Red</button>
+        <button id="btn-blue">Blue</button>
+        <button id="btn-green">Green</button>
+        <button id="btn-toggle">Toggle Visibility</button>
+    </div>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

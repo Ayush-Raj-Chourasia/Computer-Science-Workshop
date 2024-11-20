@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Event Actions</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.action-div').click(function () {
+                $(this).text('Clicked!');
+            });
+            $('.action-div').dblclick(function () {
+                $(this).css('background-color', 'orange');
+            });
+            $('.action-div').mouseenter(function () {
+                $(this).css('border-color', 'green');
+            });
+            $('.action-div').mouseleave(function () {
+                $(this).css('border-color', 'black');
+            });
+        });
+    </script>
+    <style>
+        .action-div {
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            background-color: lightblue;
+            border: 10px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="action-div">Hover or Click Me</div>
+</body>
+</html>

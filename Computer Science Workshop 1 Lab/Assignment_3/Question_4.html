@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Fetch Content</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fetch-text-btn').click(function () {
+                alert($('p').text());
+            });
+            $('#fetch-html-btn').click(function () {
+                alert($('div.html-container').html());
+            });
+        });
+    </script>
+    <style>
+        .content-container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .html-container {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <p>This is the text content of a paragraph.</p>
+        <div class="html-container">
+            <strong>This is HTML content inside a div.</strong>
+        </div>
+        <button id="fetch-text-btn">Fetch Text</button>
+        <button id="fetch-html-btn">Fetch HTML</button>
+    </div>
+</body>
+</html>

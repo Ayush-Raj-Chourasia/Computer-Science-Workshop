@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery List Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('ul').append('<li>CSS</li>');
+            $('ul').prepend('<li>Introduction to Full Stack Development</li>');
+            $('ul').after('<p>Topics updated</p>');
+            $('ul').before('<h3>List of Topics Covered</h3>');
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            width: 50%;
+            text-align: left;
+        }
+        li {
+            background-color: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Getting Started with Full Stack</li>
+        <li>HTML</li>
+    </ul>
+</body>
+</html>

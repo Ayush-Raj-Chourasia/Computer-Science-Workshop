@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#removeButton').click(function() {
+                const elementId = $('#elementId').val();
+                $('#' + elementId).remove();
+                $('#elementId').val('');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Remove Paragraph by ID</h1>
+    <label for="elementId">Enter ID to remove:</label>
+    <input type="text" id="elementId">
+    <button id="removeButton">Remove Element</button>
+    <div id="content">
+        <p id="para1">This is the first paragraph:id = "para1"</p>
+        <p id="para2">This is the second paragraph:id = "para2"</p>
+        <p id="para3">This is the third paragraph:id = "para3"</p>
+        <p id="para4">This is the fourth paragraph:id = "para4"</p>
+    </div>
+</body>
+</html>

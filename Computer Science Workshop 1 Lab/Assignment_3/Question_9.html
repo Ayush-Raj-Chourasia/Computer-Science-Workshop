@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Popup Box</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#showPopup').click(function() {
+                $('#popup').fadeIn();
+            });
+
+            $('#closePopup').click(function() {
+                $('#popup').fadeOut();
+            });
+        });
+    </script>
+    <style>
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="showPopup">Show Popup</button>
+
+    <div id="popup">
+        <h2>Custom Popup Box</h2>
+        <p>This is a custom popup box created without using alert().</p>
+        <button id="closePopup">Close</button>
+    </div>
+
+</body>
+</html>
