@@ -4,24 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Computer Science Workshop 1 Lab</title>
-  <script>
-    $(document).ready(function () {
-      $("a").hover(
-        function () {
-          $(this).css({
-            color: "white",
-            backgroundColor: "#ff5722",
-          });
-        },
-        function () {
-          $(this).css({
-            color: "#333",
-            backgroundColor: "transparent",
-          });
-        }
-      );
-    });
-  </script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -62,22 +44,41 @@
     }
 
     ul li {
-      margin: 0.5rem 0;
+      margin: 1rem 0;
     }
 
-    ul li a {
+    .question-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      
+    }
+
+    .question{
+      display: block;
+      text-align: center;
       text-decoration: none;
       color: #333;
       font-weight: bold;
-      transition: color 0.3s, background-color 0.3s;
       padding: 0.3rem 0.5rem;
-      display: inline-block;
+      border-radius: 5px;
+      transition: color 0.3s, background-color 0.3s;
+      
     }
 
-    ul li a:hover {
+    .question-row a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 0.3rem 0.5rem;
+      border-radius: 5px;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    .question-row a:hover, .question:hover {
       color: white;
       background-color: #007bff;
-      border-radius: 5px;
     }
 
     footer {
@@ -92,7 +93,6 @@
       font-size: 0.9rem;
     }
   </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header>
@@ -106,51 +106,170 @@
         <li>
           <h3>Assignment 1</h3>
           <ul>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/CSW1_Assignment_HTML.pdf">HTML</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_1.html">Question 1</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_2.html">Question 2</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_3.html">Question 3</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_4.html">Question 4</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_5.html">Question 5</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_6.html">Question 6</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_7.html">Question 7</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_8.html">Question 8</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_9.html">Question 9</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_10.html">Question 10</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_11.html">Question 11</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_12.html">Question 12</a></li>
+            <li>
+              <a class="question" href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/CSW1_Assignment_HTML.pdf">HTML</a>
+            </li>
+            <li class="question-row">
+              Question 1
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_1.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_1.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 2
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_2.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_2.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 3
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_3.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_3.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 4
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_4.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_4.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 5
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_5.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_5.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 7
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_7.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_7.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 8
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_8.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_8.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 9
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_9.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_9.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 10
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_10.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_10.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 11
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_11.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_11.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 12
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_12.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_1/Question_12.html">Output</a>
+            </li>
           </ul>
         </li>
         <li>
           <h3>Assignment 2</h3>
           <ul>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/CSW1_Assignment_CSS.pdf">CSS</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_1.html">Question 1</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_2.html">Question 2</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_3.html">Question 3</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_4.html">Question 4</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_5.html">Question 5</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_6.html">Question 6</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_7.html">Question 7</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_8.html">Question 8</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_9.html">Question 9</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_10.html">Question 10</a></li>
+            <li>
+              <a class="question" href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/CSW1_Assignment_CSS.pdf">CSS</a>
+            </li>
+            <li class="question-row">
+              Question 1
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_1.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_1.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 2
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_2.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_2.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 3
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_3.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_3.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 4
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_4.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_4.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 5
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_5.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_5.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 7
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_7.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_7.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 8
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_8.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_8.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 9
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_9.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_9.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 10
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_10.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_2/Question_10.html">Output</a>
+            </li>
           </ul>
         </li>
         <li>
           <h3>Assignment 3</h3>
           <ul>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/CSW1_Assignment_jQuery.pdf">jQuery</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_1.html">Question 1</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_2.html">Question 2</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_3.html">Question 3</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_4.html">Question 4</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_5.html">Question 5</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_6.html">Question 6</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_7.html">Question 7</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_8.html">Question 8</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_9.html">Question 9</a></li>
-            <li><a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_10.html">Question 10</a></li>
+            <li>
+              <a  class="question" href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/CSW1_Assignment_jQuery.pdf">jQuery</a>
+            </li>
+            <li class="question-row">
+              Question 1
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_1.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_1.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 2
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_2.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_2.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 3
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_3.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_3.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 4
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_4.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_4.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 5
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_5.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_5.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 7
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_7.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_7.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 8
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_8.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_8.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 9
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_9.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_9.html">Output</a>
+            </li>
+            <li class="question-row">
+              Question 10
+              <a href="https://github.com/Ayush-Raj-Chourasia/Computer-Science-Workshop/blob/main/Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_10.html">Code</a>
+              <a href="Computer%20Science%20Workshop%201%20Lab/Assignment_3/Question_10.html">Output</a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -159,6 +278,5 @@
   <footer>
     <p>&copy; 2024 <a style="color:red" href="https://github.com/Ayush-Raj-Chourasia/">Github</a><br> All rights reserved.</p>
   </footer>
-  
 </body>
 </html>
