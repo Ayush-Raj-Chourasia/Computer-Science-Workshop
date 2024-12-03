@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">HTML Tutorial</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center bg-light">
+        <h1 class="display-4">Learn HTML</h1>
+        <p class="lead">HTML is the standard markup language for creating web pages.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+    </div>
+
+    <!-- Nav Tabs -->
+    <div class="container mt-4">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="syntax-tab" data-toggle="tab" href="#syntax" role="tab">HTML Syntax</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="examples-tab" data-toggle="tab" href="#examples" role="tab">Examples</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                <h3>Overview</h3>
+                <p>HTML stands for HyperText Markup Language and is used to structure web pages.</p>
+            </div>
+            <div class="tab-pane fade" id="syntax" role="tabpanel">
+                <h3>HTML Syntax</h3>
+                <p>HTML uses tags such as <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.</p>
+            </div>
+            <div class="tab-pane fade" id="examples" role="tabpanel">
+                <h3>Examples</h3>
+                <p>Example of an HTML document:</p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;
+    &lt;body&gt;Hello World!&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Pills -->
+    <div class="container mt-4">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Attributes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Elements</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Pagination -->
+    <div class="container mt-4">
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
