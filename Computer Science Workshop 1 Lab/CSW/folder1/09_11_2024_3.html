@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        /* Styling the div1 */
+        #div1 {
+            background-color: #f0f8ff; /* Light blue background */
+            border: 2px solid #add8e6;  /* Light blue border */
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        #div1 p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Styling the div2 */
+        #div2 {
+            background-color: #fff8dc; /* Light yellow background */
+            border: 2px solid #f0e68c;  /* Light yellow border */
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        #div2 p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        #div2 ol {
+            margin-left: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            // Removes the entire div1 when the "Remove Text" button is clicked
+            $("#add1").click(function () {
+                $("#div1").remove();
+            });
+
+            // Empties the content of div2 when the "Empty List items" button is clicked
+            $("#add2").click(function () {
+                $("#div2").empty();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        <p>This is paragraph</p>
+        <p>This is another paragraph</p>
+    </div>
+
+    <div id="div2">
+        <p>Hello</p>
+        <ol>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+        </ol>
+    </div>
+
+    <button id="add1">Remove Text</button>
+    <button id="add2">Empty List items</button>
+
+</body>
+
+</html>

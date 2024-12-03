@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Chaining
+</title>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#box").css("color","red").slideUp(2000).slideDown(2000);
+                   
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="button">Start</button>
+    <div id="box">
+        Hello World
+    </div>
+
+</body>
+
+</html>

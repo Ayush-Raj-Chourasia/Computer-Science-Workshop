@@ -1,0 +1,83 @@
+p {
+color:green;
+font-size:40px;
+}
+
+h2{
+color:red;
+font-size:20px;
+text-align:center
+}
+
+table{
+border:1px solid blue;
+width:100%;
+}
+
+*{
+margin:0;
+padding:0;
+text-align:center;
+
+}
+
+#id1{
+color:purple;
+font-size:20px;
+}
+
+
+#id2{
+color:orange;
+font-size:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.button {
+            background-color: #4CAF50; /* Initial color */
+            color: white; /* Text color */
+            padding: 15px 32px; /* Padding */
+            text-align: center; /* Center text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Inline-block display */
+            font-size: 16px; /* Font size */
+            margin: 4px 2px; /* Margin */
+            cursor: pointer; /* Pointer cursor */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners */
+            transition: background-color 0.3s; /* Transition effect */
+        }
+
+        .button:hover {
+            background-color: red; /* Color on hover */
+
+*/

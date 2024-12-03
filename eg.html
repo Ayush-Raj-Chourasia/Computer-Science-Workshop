@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Image with horizontal repetition and box model */
+        .image-container {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #007bff;
+            background: url('https://fps.cdnpk.net/images/home/subhome-ai.webp?w=300&h=200') repeat-x;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* Vertical menu bar */
+        .menu-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            background-color: #007bff;
+            color: #fff;
+            height: 100%;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .menu-bar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .menu-bar a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Dropdown menu */
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-button {
+            cursor: pointer;
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #ffffff;
+            color: #000;
+            display: none;
+            width: 180px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+    
+    </div>
+
+  
+    <div class="menu-bar">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <div class="dropdown">
+            <div class="dropdown-button">More</div>
+            <div class="dropdown-menu">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

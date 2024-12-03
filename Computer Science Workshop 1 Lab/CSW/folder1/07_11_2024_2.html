@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#test1").text("Hello World").css({"text-align":"center","color":"Blue"});
+            });
+            $("#button2").click(function () {
+                $("#test2").html("<b>Hello World</b>").css({"text-align":"center"});
+            });
+            $("#button3").click(function () {
+                $("#test3").val("Dolly Duck").css({"text-align":"center"});
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <p id="test1">This is a paragraph</p>
+    <p id="test2">This is another paragraph</p>
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+    <button id="button1">Set Text</button><br><br>
+    <button id="button2">Set HTML</button><br><br>
+    <button id="button3">Set Value</button><br><br>
+</body>
+
+</html>

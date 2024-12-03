@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#add1").click(function () {
+                $("#test1").append(" World").css({"text-align":"center","color":"Blue"});
+            });
+            $("#add2").click(function () {
+                $("#test1").prepend("Hi ").css({"text-align":"center","color":"Blue"});
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="test1">Hello</div>
+    <button id="add1">Add Text</button>
+    <button id="add2">Add Text</button>
+</body>
+
+</html>

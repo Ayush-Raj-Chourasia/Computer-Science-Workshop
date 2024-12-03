@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Navigation Example</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: blue;
+        }
+
+        li {
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            padding: 40px;
+        }
+
+        .inside {
+            margin: 0;
+            display: flex;
+            justify-content: left;
+            padding: 10px;
+            color: white; /* Set default text color */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: green;
+            min-width: 400px; 
+            z-index: 1;
+            border: 1px solid black;
+            left: 0;
+            top: 30px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Hover effects for dropdown items */
+        .inside:hover {
+            color: white; /* Change text color on hover */
+            background-color: darkred; /* Change background color on hover */
+            text-decoration: underline; /* Underline text on hover */
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+            <a href="#news">News</a>
+            <div class="dropdown-content">
+                <a class="inside" href="#a">Heading 1: Local News Update</a>
+                <a class="inside" href="#b">Heading 2: International News Summary</a>
+                <a class="inside" href="#c">Heading 3: Sports News Highlights</a>
+            </div>
+        </li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>22/10/2024</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#button1").click(function() {
+            $("#myparagraph").fadeOut(); 
+        });
+        $("#button2").click(function() {
+            $("#myparagraph").fadeIn(); 
+        });
+    });
+    </script>
+
+    <style>
+        p {
+            color: blue;
+            text-align: center;
+        }
+
+        #button1 {
+            background-color: red;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 12px; /* Rounded corners */
+            margin: 10px;
+            padding: 10px 20px; /* Added padding for a better look */
+            color: white; /* Text color */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        #button2 {
+            background-color: green;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 12px; /* Rounded corners */
+            margin: 10px;
+            padding: 10px 20px; /* Added padding for a better look */
+            color: white; /* Text color */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        #buttonContainer {
+            display: flex;
+            justify-content: center; /* Center the buttons horizontally */
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <p id="myparagraph">This is a paragraph</p>
+</div>
+    <div id="buttonContainer">
+        <button id="button1">Hide</button>
+        <button id="button2">Show</button>
+    </div>
+</body>
+</html>

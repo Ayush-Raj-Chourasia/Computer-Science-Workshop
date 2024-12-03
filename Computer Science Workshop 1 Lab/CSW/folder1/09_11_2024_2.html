@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#add1").click(function () {
+                $("p").prepend(" <b>Appended text</b>").css({"text-align":"center","color":"Blue"});
+            });
+            $("#add2").click(function () {
+                $("ol").prepend("<li>Appended item 4</li>").css({"text-align":"center","color":"Green"});
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    
+    <p>This is paragraph</p>
+    <p>This is another paragraph</p>
+    <ol>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        
+    </ol>
+    <button id="add1">Prepend Text</button>
+    <button id="add2">Prepend List items</button>
+</body>
+
+</html>

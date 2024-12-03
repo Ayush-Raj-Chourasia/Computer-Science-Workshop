@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#add1").click(function () {
+                $("#div1").addClass("test blue")
+            });
+            $("#add2").click(function () {
+                $("div").removeClass()
+            });
+        });
+    </script>
+<style>
+    .test{
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .blue{
+        color: blue;
+    }
+    .div2{
+        color: blue;
+    }
+    
+</style>
+</head>
+
+<body>
+
+    <div id="div1">This is some text</div>
+    <div class ="div2">This is some text</div>
+    <br>
+    <button id="add1">Add Class</button>
+    <button id="add2">Prepend List items</button>
+</body>
+
+</html>

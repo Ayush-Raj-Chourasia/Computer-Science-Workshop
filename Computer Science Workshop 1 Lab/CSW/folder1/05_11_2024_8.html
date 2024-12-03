@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #box2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #box1 {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 300px;
+            align-items: center;
+            border-radius: 20px;
+            margin: 20px;
+
+        }
+
+        #box {
+            width: 100px;
+            height: 200px;
+            background-color: rgb(105, 169, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            margin: 20px;
+            position: relative;
+        }
+
+        .btn-container {
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+
+        button {
+            margin: 5px;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+
+        }
+
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgb(243, 82, 221);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            left: 0;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $("#hideBtn").click(function () {
+                $("#box").hide(1000);
+            });
+
+
+            $("#showBtn").click(function () {
+                $("#box").show(1000);
+            });
+
+
+            $("#toggleBtn").click(function () {
+                $("#box").toggle(1000);
+            });
+
+
+            $("#fadeOutBtn").click(function () {
+                $("#box").fadeOut(1000);
+            });
+
+
+            $("#fadeInBtn").click(function () {
+                $("#box").fadeIn(1000);
+            });
+
+
+            $("#slideUpBtn").click(function () {
+                $("#box").slideUp(1000);
+            });
+
+
+            $("#slideDownBtn").click(function () {
+                $("#box").slideDown(1000);
+            });
+
+
+            $("#animateBtn").click(function () {
+                $("#box").animate({ left: "250px" }, 1000);
+            });
+
+
+            $("#resetBtn").click(function () {
+                $("#box").css({ left: "0px", display: "flex", backgroundColor: "rgb(105, 169, 230)" }).show();
+            });
+
+
+            $("#changeColorBtn").click(function () {
+                $("#box").css("background-color", "lightgreen");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box2">
+        <div id="box1">
+            <div id="box">
+                <p>Effect Box</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button id="hideBtn">Hide</button>
+        <button id="showBtn">Show</button>
+        <button id="toggleBtn">Toggle</button>
+        <button id="fadeOutBtn">Fade Out</button>
+        <button id="fadeInBtn">Fade In</button>
+        <button id="slideUpBtn">Slide Up</button>
+        <button id="slideDownBtn">Slide Down</button>
+        <button id="animateBtn">Animate</button>
+        <button id="resetBtn">Reset</button>
+        <button id="changeColorBtn">Change Color</button>
+    </div>
+
+
+
+
+</body>
+
+</html>

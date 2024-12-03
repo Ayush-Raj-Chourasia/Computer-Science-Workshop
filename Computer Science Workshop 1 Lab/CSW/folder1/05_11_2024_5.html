@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Callback functions
+</title>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#animate").click(function () {
+                $("#box").animate({left:"250px"}, 1000, function(){
+                    $(this).css("background-color","yellow");
+                });
+            });
+        });
+    </script>
+    <style>
+        #box {
+            height: 110px;
+            width: 110px;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+            background-color: aquamarine;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box img {
+            height: 200px;
+            width:200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="animate">Animate</button>
+    <div id="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Image">
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"> 
+</script>
+
+
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var div = $("div");
+div.animate({height:"300px",opacity:"0.4"},"slow");
+div.animate({width:"300px",opacity:"0.8"},"slow");
+div.animate({height:"100px",opacity:"0.4"},"slow");
+div.animate({width:"100px",opacity:"0.4"},"slow");
+});
+$("#stop").click(function(){
+    $("div").stop(true,true);
+});
+});
+</script>
+</head>
+
+
+<body>
+<button>Start Animation</button>
+<button id="stop">Stop Animation</button>
+
+<div style="background:red;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>
