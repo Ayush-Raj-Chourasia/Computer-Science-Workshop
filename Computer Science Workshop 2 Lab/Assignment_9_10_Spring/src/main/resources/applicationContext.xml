@@ -5,19 +5,19 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Q1 Student beans -->
-    <bean id="student1" class="Student">
+    <bean id="student1" class="com.example.springcore.Student">
         <property name="name" value="Alice"/>
         <property name="rollno" value="101"/>
         <property name="email" value="alice@example.com"/>
     </bean>
-    <bean id="student2" class="Student">
+    <bean id="student2" class="com.example.springcore.Student">
         <property name="name" value="Bob"/>
         <property name="rollno" value="102"/>
         <property name="email" value="bob@example.com"/>
     </bean>
 
     <!-- Q2 Sim beans -->
-    <bean id="sim1" class="Voda"/>
-    <bean id="sim2" class="Airtel"/>
+    <bean id="sim1" class="com.example.springcore.Voda"/>
+    <bean id="sim2" class="com.example.springcore.Airtel"/>
 
 </beans> 
